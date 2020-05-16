@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Parsing and writing 2bp files",
   "main": "/dist/convert2bp.js",
-  "bin:": "/dist/convert2bp.js",
+  "bin": "./dist/convert2bp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
