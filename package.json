@@ -1,0 +1,22 @@
+{
+  "name": "convert2bp",
+  "version": "0.0.1",
+  "description": "Parsing and writing 2bp files",
+  "main": "/dist/convert2bp.js",
+  "bin:": "/dist/convert2bp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "2bp",
+    "bitmap"
+  ],
+  "author": "Thomas Novotny",
+  "license": "ISC",
+  "dependencies": {
+    "@types/argparse": "^1.0.38",
+    "@types/node": "^14.0.1",
+    "argparse": "^1.0.10",
+    "pngjs": "^5.0.0"
+  }
+}
