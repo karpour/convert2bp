@@ -1,3 +1,5 @@
+#!/bin/node
+
 import fs from 'fs';
 import parseArgs from './parseArgs';
 import printUsage from './parseArgs';
