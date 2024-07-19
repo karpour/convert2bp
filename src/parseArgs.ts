@@ -6,11 +6,12 @@ interface Covert2bpArgs {
     force: boolean;
 }
 
-var parser = new ArgumentParser({
+const parser = new ArgumentParser({
     version: '1.0.0',
     addHelp: true,
     description: '2bp to BMP converter'
 });
+
 parser.addArgument(
     ['-o', '--output-file'],
     {
@@ -20,6 +21,7 @@ parser.addArgument(
         required: false
     }
 );
+
 parser.addArgument(
     ['-f', '--force'],
     {
@@ -31,6 +33,7 @@ parser.addArgument(
         required: false
     }
 );
+
 parser.addArgument(
     ['INPUTFILE'],
     {
@@ -41,7 +44,7 @@ parser.addArgument(
 );
 
 export default function parseArgs(): Covert2bpArgs {
-    let result = parser.parseArgs();
+    const result = parser.parseArgs();
     return {
         outputFile: result.outputFile,
         inputFile: result.INPUTFILE ? result.INPUTFILE : null,
@@ -49,5 +52,5 @@ export default function parseArgs(): Covert2bpArgs {
     };
 }
 
-export var printUsage = parser.printUsage;
-export var printHelp = parser.printHelp;
+export const printUsage = parser.printUsage;
+export const printHelp = parser.printHelp;
